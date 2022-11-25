@@ -14,14 +14,29 @@ nav {
   gap: 32px;
   padding: 20px;
   margin-left: 0px;
-  font-family: 'Lemonada', cursive;
+  font-family: 'Helvetica Now Display DW', sans-serif;
   color: rgba(11, 2, 2, 0.908);
+  position: sticky;
+  top: 40;
 }
 
+#fondo {
+  background-color: rgba(140, 140, 140, 0.026);
+  color: rgb(187, 38, 38);
+  width: 100%;
+  font-size: 12em;
+  
+  
+  /* text-shadow: 3px 3px rgba(221, 13, 13, 0.671) ; */
+}
+
+/* texto menu en charli repo */
 .navIcon {
  font-size:30px
  
 }
+
+
 
 a {
   color: inherit;
