@@ -1,11 +1,13 @@
 "use client"
-// import gsap from "gsap"
-// Linea 1 traera animaciones de gsap
 
 import { useEffect } from "react"
+
+import BackgroundDeveloper from "../components/backgroundText"
 // Linea 4 traera el hook useEffect
 
 import HeadText from "../components/headText"
+import Projects from "../components/Projects"
+
 // Linea 8 importamos el componente headText
 
 
@@ -14,8 +16,9 @@ import HeadText from "../components/headText"
 export default function HomePage () {
     return <>
         <div className="row">
-            <div id="fondo" className="col-5 col-lg-12 text-center">Developer</div>
+            <BackgroundDeveloper/>
             <HeadText/>
+            <Projects/>
         </div>
     </>
 }
