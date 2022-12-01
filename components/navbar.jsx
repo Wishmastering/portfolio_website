@@ -25,13 +25,13 @@ export default function Navbar () {
             <div className="float-start navIcon d-flex align-items-center ms-5"><ion-icon name="logo-reddit"></ion-icon>Carlos Carranza</div>
             
             <div class="float-end dropdown me-3">
-                <a class="btn d-flex navIcon align-items-center" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Menu <ion-icon name="menu-outline"></ion-icon>
+                <a class="btn d-flex navIcon align-items-center pointer" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span className="navIcon2 ">Menu</span> <ion-icon name="menu-outline"></ion-icon>
                 </a>
 
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Projects</a></li>
-                    <li><a class="dropdown-item" href="#">About Me</a></li>
+                    <li><Link class="dropdown-item" href="/about">About Me</Link></li>
                     <li><a class="dropdown-item" href="#">Contact</a></li>
                     <li><a class="dropdown-item" href="#">Github</a></li>
                     <li><a class="dropdown-item" href="#">Linkedin</a></li>

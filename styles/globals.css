@@ -1,40 +1,93 @@
+@import url("../styles/HelveticaFont/style.css");
+@import url("../styles/HelveticaFont_Light/style.css");
+
+
 html,
 body {
   background: linear-gradient(132deg, rgba(255, 255, 255, 0.882), rgba(255, 255, 255, 0.918));
   padding: 0;
   margin: 0;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Helvetica Now Display Light', serif;
   width: 100%;
-  height: 400vh;
+  /* height: 400vh; */
+  /* overflow-x: hidden; */
+}
+
+.body2{
   overflow-x: hidden;
 }
 
-/* nav {
-  background: linear-gradient(132deg, rgba(255, 255, 255, 0.882), rgb(242, 240, 240) 100%);
-  list-style: none;
-  gap: 32px;
-  padding: 20px;
-  margin-left: 0px;
-  font-family: 'Helvetica Now Display DW', sans-serif;
-  color: rgba(11, 2, 2, 0.908);
-  position: sticky;
-  top: 40;
-} */
+h1{
+  font-size: 3.125rem;
+  line-height: 2.5rem;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  font-family: 'Helvetica Now Display';
+}
+
+h5{
+  font-size: .875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: .4em;
+  color: #878a8f;
+  
+}
+
+h3{
+  font-size: 1.375rem;
+  line-height: 1.875rem;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  font-weight: 500;
+  color: #878a8f;
+  letter-spacing: normal;
+}
+
+h3 em{
+  font-weight: 500;
+  color: #cfd0d2;
+  margin: 0 0.625rem;
+  font-style: normal;
+  font-family: 'Helvetica Now Display Light' !important;
+}
+
+p{
+  color: #878a8f;
+  font-weight: 500;
+  letter-spacing: .01em;
+  padding-top: 2px;
+  padding-bottom: 3px;
+}
+
+.heavyFont{
+  font-family: 'Helvetica Now Display';
+}
+
+.fontWeight{
+  font-size: 20px;
+}
+
 
 #fondo {
   background-color: rgba(140, 140, 140, 0.026);
   color: rgb(187, 38, 38);
   width: 100%;
   font-size: 10em;
-  
-  
+  font-family: 'Helvetica Now Display';
   /* text-shadow: 3px 3px rgba(221, 13, 13, 0.671) ; */
 }
 
 /* texto menu en charli repo */
 .navIcon {
- font-size:30px
- 
+  font-size:30px
+}
+
+.navIcon2 {
+  font-size:    15px ;
+  font-family: 'Helvetica Now Display';
+  letter-spacing: 0.1em;
 }
 
 .navigation {
@@ -44,10 +97,53 @@ body {
 }
 
 .pointer{
-  cursor: pointer;
+  color: black; 
+  /* border-bottom: 1px; */
 }
+
+.pointer:hover{
+  cursor: pointer;
+  border-bottom: 1px black solid;
+  color: black;
+  display:inline-block;
+}
+
+.pointerh1:hover{
+  border-bottom: 4px black solid;
+  color: black;
+  display:inline-block;
+}
+
 
 .marginSection{
   margin-top: 200px;
 }
 
+.blackFont{
+  color:black !important;
+}
+
+.headerDark{
+  font-weight: 500;
+  color: #0f141e;
+  letter-spacing: normal;
+}
+
+.headerLight{
+  font-weight: 500;
+  color: #878a8f;
+  letter-spacing: normal;
+}
+
+
+/* nav {
+  background: linear-gradient(132deg, rgba(255, 255, 255, 0.882), rgb(242, 240, 240) 100%);
+  list-style: none;
+  gap: 32px;
+  padding: 20px;
+  margin-left: 0px;
+  font-family: 'Helvetica Now Display Light', sans-serif;
+  color: rgba(48, 224, 89, 0.908);
+  position: sticky;
+  top: 40;
+} */
