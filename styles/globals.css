@@ -1,6 +1,11 @@
 @import url("../styles/HelveticaFont/style.css");
 @import url("../styles/HelveticaFont_Light/style.css");
 
+* {
+  -webkit-font-variant-ligatures: none;
+  font-variant-ligatures: none;
+  -webkit-font-smoothing: antialiased;
+}
 
 html,
 body {
@@ -96,24 +101,54 @@ p{
   cursor: pointer;
 }
 
-.pointer{
-  color: black; 
-  /* border-bottom: 1px; */
+.pointerAbout{
+  cursor: pointer; 
+  /* outline: none !important; */
+  border-bottom: 1px solid !important;        
+  color: inherit;
 }
 
-.pointer:hover{
+.pointerAbout:hover{
   cursor: pointer;
-  border-bottom: 1px black solid;
-  color: black;
-  display:inline-block;
+  color:inherit;
 }
+
+.pointer{
+  cursor: pointer; 
+  /* outline: none !important; */
+  /* border: none !important;         */
+  text-decoration: none;
+  color: black;
+  /* box-shadow: none !important; */
+  /* -webkit-tap-highlight-color: transparent !important; */
+  /* -webkit-user-select: none;  */
+  /* -moz-user-select: none;  */
+  /* -ms-user-select: none; */
+  /* user-select: none; */
+}
+
 
 .pointerh1:hover{
+  cursor: pointer;
   border-bottom: 4px black solid;
   color: black;
   display:inline-block;
+  transition: all .2s cubic-bezier(.3,0,.5,1)
 }
 
+.pointerh3:hover{
+  cursor: pointer;
+  border-bottom: 2px black solid !important;
+  color: black;
+  display:inline-block !important;
+  transition: all .2s cubic-bezier(.3,0,.5,1)
+}
+
+.pointerNav:hover{
+  cursor: pointer;
+  color: #878a8f !important;
+  transition: all .2s cubic-bezier(.3,0,.5,1)
+}
 
 .marginSection{
   margin-top: 200px;
@@ -135,15 +170,22 @@ p{
   letter-spacing: normal;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-/* nav {
-  background: linear-gradient(132deg, rgba(255, 255, 255, 0.882), rgb(242, 240, 240) 100%);
-  list-style: none;
-  gap: 32px;
-  padding: 20px;
-  margin-left: 0px;
-  font-family: 'Helvetica Now Display Light', sans-serif;
-  color: rgba(48, 224, 89, 0.908);
-  position: sticky;
-  top: 40;
-} */
+
+
+
+/*  ALL THE OPTIONS IN CSS TO NOT SHOW BORDER BOTTOM */
+
+/* outline: none !important; */
+  /* border: none !important;         */
+  /* text-decoration: none; */
+  /* box-shadow: none !important; */
+  /* -webkit-tap-highlight-color: transparent !important; */
+  /* -webkit-user-select: none;  */
+  /* -moz-user-select: none;  */
+  /* -ms-user-select: none; */
+  /* user-select: none; */

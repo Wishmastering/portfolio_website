@@ -14,9 +14,9 @@ export default function Footer(){
 
                 <div className="col-xl-2 col-md-3 col-sm-12 ms-3 me-3">
                     <h1 className="heavyFont fontWeight"> Latest Projects —</h1>
-                    <p className="pointer"> Where2day</p>
-                    <p className="pointer"> Starwars Blog</p>
-                    <p className="pointer"> Play with me!</p>
+                    <p className="pointer"><Link href="https://github.com/Charlytoc/where2day">Where2day </Link> </p>
+                    <p className="pointer"><Link href="https://github.com/Wishmastering/StarWars-React"> Starwars Blog </Link> </p>
+                    <p className="pointer"><Link href="/"> Play with me!</Link> </p>
                 </div>
                 <div className="col-xl-2 col-md-3 col-sm-12 ms-3 me-3">
                     <h1 className="heavyFont fontWeight"> Current Availability — </h1>
