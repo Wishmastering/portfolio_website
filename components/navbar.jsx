@@ -35,9 +35,9 @@ export default function Navbar () {
                 </a>
 
                 <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="#">Projects</a></li>
+                    <li><a className="dropdown-item" href="/projects/where2day">Projects</a></li>
                     <li><Link className="dropdown-item" href="/about">About Me</Link></li>
-                    <li><a className="dropdown-item" href="#">Contact</a></li>
+                    <li><a className="dropdown-item" href="/contact">Contact</a></li>
                     <li><a className="dropdown-item" href="#">Github</a></li>
                     <li><a className="dropdown-item" href="#">Linkedin</a></li>
                 </ul>

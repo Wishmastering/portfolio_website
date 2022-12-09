@@ -180,7 +180,20 @@ a {
   height: 100%;
 }
 
+.projectsHeight{
+  height: 700px;
+  overflow-y: hidden;
+}
 
+.blur:hover{
+  filter: blur(3px)
+}
+
+.zindex{
+  z-index: 5;
+  display: block;
+  
+}
 
 
 /*  ALL THE OPTIONS IN CSS TO NOT SHOW BORDER BOTTOM */
