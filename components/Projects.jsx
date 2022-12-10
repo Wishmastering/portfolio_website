@@ -12,20 +12,16 @@ import {useState} from "react";
 export default function Projects(){
     
     const [blur, setBlur] = useState(false);
-
+    const [blurStarWars, setBlurStarWars] = useState(false);
+    
     function test(){
-         if (blur){
-            console.log("Funciono")
-        }
-        else{
-            console.log("NO Funciono")
-        }
+         
     }
 
     setTimeout(test(), 5000)
 
     return<>
-        <div className="ms-4 container w-100 marginSection ">
+        <section className="ms-4 container w-100 marginSection justify-content-center">
             <div className="row">
                 <div className="col-5">
                     <h5 className="ms-4"> Selected Projects</h5>
@@ -36,51 +32,80 @@ export default function Projects(){
             {/* Aca empiezan las cards de portfolio con animacion */}
 
             <div className="row mt-5 w-100 ">
-                <div className="position-relative col-lg-6 projectsHeight">
-                    {/* Div de la 27 aparece/desaparece el texto */}
-                    {/* NO OCUPA MOUSE LEAVE PORQUE TIENE OPACIDAD 0 */}
-                    <div onMouseEnter={()=> setBlur(true)}
-                         className="visible position-absolute ms-5 mt-3"><h1> Where2day</h1>
+                
+                {/* Metemos todo dentro del <a> tag para que TODO redirija */}
+                <div className="position-relative col-lg-6 projectsHeight overflowx">
+                    <a href="/projects/where2day">
                         <div 
-                            // onMouseEnter={()=> setBlur(true)}
-                             className={blur ? "visible desblurry position-absolute ms-3 mt-3" : "invisible blurry"}>
-                                <h2>Where2Day - A social app to share experiences</h2> 
-                        </div>
-                    </div>
+                         className="visible position-absolute ms-5 mt-3">
+                            <h1
+                             onMouseEnter={()=> setBlur(true)}    
+                              > Where2day
+                            </h1>
+                            <div 
+                             onMouseEnter={()=> setBlur(true)}
+                             className={blur ? "visible desblurry position-absolute ms-3 mt-3" : "invisible blurry"}
+                             >
+                                <h3>Jul 2022 - Oct 2022 </h3>
+                                <h2>Where2Day - <br/> A social app to share experiences</h2> 
+                                <h3>View Project ➡</h3>
+                            </div>
                     
-                    {/* // Aca si se hace on mouseEnter para setear blur TRUE y hacer */}
-                    {/* // "El Agregado de la class que le hace la transicion de CSS" */}
-                    {/* // Luego el mouseLEAVE hara blur FALSE y regresa al estado inicial */}
-                    <Image 
-                    onMouseEnter={() => setBlur(true)}
-                    onMouseLeave={() => setBlur(false)}
-                    className={blur ? "rounded shadow blurry" : "rounded shadow desblurry"}
-                    alt="Where2day"
-                    src={where2dayHOME}
-                    width={500}
-                    height={1000}
-                    style={{
+                        </div>
+                    
+                     {/* // Aca se hace on mouseEnter para setear blur TRUE y hacer */}
+                     {/* // "El Agregado de la class que le hace la transicion de CSS" */}
+                     {/* // Luego el mouseLEAVE hara blur FALSE y regresa al estado inicial */}
+                     <Image 
+                     onMouseEnter={() => setBlur(true)}
+                     onMouseLeave={() => setBlur(false)}
+                     className={blur ? "rounded shadow blurry pointerWeak position-absolute" : "rounded shadow desblurry position-absolute"}
+                     alt="Where2day"
+                     src={where2dayHOME}
+                     width={500}
+                     height={1000}
+                     style={{
                         maxWidth: "100%",
                         height: "auto",
-                    }}
-                    />
+                     }}
+                     />
+                    </a>
                 </div>    
+
+                    {/* Inicia nuevo card */}
                 <div className="position-relative col-6 projectsHeight">
-                    <div  className="position-absolute col-6 visible"><h1> Star Wars</h1></div>
-                    <Image 
-                    className="rounded shadow desblurry"
-                    alt="Where2day"
-                    src={where2dayPOST}
-                    width={500}
-                    height={1000}
-                    style={{
-                        maxWidth: "100%",
-                        height: "auto",
-                    }}
-                    />
+                    <a href="/projects/star_wars">
+                        <div  className="position-absolute mt-3 ms-5 col-6 visible">
+                            <h1
+                             onMouseEnter={()=> setBlurStarWars(true)}>
+                             Star Wars
+                            </h1>
+                            <div 
+                             onMouseEnter={()=> setBlurStarWars(true)}
+                             className={blurStarWars ? "visible desblurry position-absolute ms-3 mt-3" : "invisible blurry"}
+                             >
+                                <h3>Jul 2022 - Aug 2022 </h3>
+                                <h2>Star Wars Website - <br/> Interactive Website That Used Fetch API Star Wars Database</h2> 
+                                <h3>View Project ➡</h3>
+                            </div>
+                        </div>
+                        <Image 
+                         onMouseEnter={() => setBlurStarWars(true)}
+                         onMouseLeave={() => setBlurStarWars(false)}
+                         className={blurStarWars ? "rounded shadow blurry pointerWeak position-absolute" : "rounded shadow desblurry position-absolute"}
+                         alt="Where2day"
+                         src={where2dayPOST}
+                         width={500}
+                         height={1000}
+                         style={{
+                            maxWidth: "100%",
+                            height: "auto",
+                         }}
+                        />
+                    </a>
                 </div>    
             </div>
             
-        </div>
+        </section>
     </>
 }
