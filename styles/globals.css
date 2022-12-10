@@ -119,6 +119,7 @@ p{
   /* border: none !important;         */
   text-decoration: none;
   color: black;
+  z-index: 6;
   /* box-shadow: none !important; */
   /* -webkit-tap-highlight-color: transparent !important; */
   /* -webkit-user-select: none;  */
@@ -185,16 +186,30 @@ a {
   overflow-y: hidden;
 }
 
-.blur:hover{
-  filter: blur(3px)
-}
 
-.zindex{
+.visible{
   z-index: 5;
   display: block;
-  
+  /* background-color:blanchedalmond; */
+  transition: opacity 3s !important;
+  opacity: 1;
 }
 
+.invisible{
+  opacity: .5;
+  background-color:black;
+}
+
+.blurry{
+  filter: blur(3px);
+  opacity: 0;
+  transition: opacity 2s, filter 2s;
+}
+
+.desblurry{
+  opacity: 1;
+  transition: opacity 2s;
+}
 
 /*  ALL THE OPTIONS IN CSS TO NOT SHOW BORDER BOTTOM */
 
