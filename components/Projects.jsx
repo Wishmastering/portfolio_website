@@ -37,14 +37,14 @@ export default function Projects(){
                 <div className="position-relative col-lg-6 projectsHeight overflowx">
                     <a href="/projects/where2day">
                         <div 
-                         className="visible position-absolute ms-5 mt-3">
+                         className="visible position-absolute ms-5 mt-3 w-75">
                             <h1
                              onMouseEnter={()=> setBlur(true)}    
                               > Where2day
                             </h1>
                             <div 
                              onMouseEnter={()=> setBlur(true)}
-                             className={blur ? "visible desblurry position-absolute ms-3 mt-3" : "invisible blurry"}
+                             className={blur ? "visible desblurry position-absolute ms-3 mt-3 w-75" : "invisible blurry w-75"}
                              >
                                 <h3>Jul 2022 - Oct 2022 </h3>
                                 <h2>Where2Day - <br/> A social app to share experiences</h2> 

@@ -14,8 +14,8 @@ export default function Footer(){
 
                 <div className="col-xl-2 col-md-3 col-sm-12 ms-3 me-3">
                     <h1 className="heavyFont fontWeight"> Latest Projects —</h1>
-                    <p className="pointer"><Link href="https://github.com/Charlytoc/where2day">Where2day </Link> </p>
-                    <p className="pointer"><Link href="https://github.com/Wishmastering/StarWars-React"> Starwars Blog </Link> </p>
+                    <p className="pointer"><Link href="/projects/where2day">Where2day </Link> </p>
+                    <p className="pointer"><Link href="/projects/star_wars"> Starwars Blog </Link> </p>
                     <p className="pointer"><Link href="/"> Play with me!</Link> </p>
                 </div>
                 <div className="col-xl-2 col-md-3 col-sm-12 ms-3 me-3">
@@ -25,8 +25,9 @@ export default function Footer(){
                 </div>
                 <div className="col-xl-1 col-md-2 col-sm-12 ms-3 me-3">
                     <h1 className="heavyFont fontWeight"> Follow Me On —</h1>
-                    <p className="pointer">Linkedin</p>
-                    <p className="pointer">Github</p>
+                    <Link href="https://www.linkedin.com/in/carlos-i-carranza/" target="_blank" className="pointer pointerh3"><p className="pointer">Linkedin</p></Link>
+                    <Link href="https://github.com/Wishmastering" target="_blank"><p className="pointer pointerh3">Github</p></Link>
+                    
                 </div>
         </div>
     </>

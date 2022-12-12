@@ -1,4 +1,6 @@
 import Link from "next/link" 
+import Image from "next/image";
+import logo from "../public/CC.png"
 // activa el next JS para poder navegar entre links
 
 // import HomePage from "../app/page"
@@ -24,17 +26,28 @@ export default function Navbar () {
         <div className="navigation d-flex fs-6 w-100 mt-3 justify-content-between">
             <div className="float-start navIcon d-flex align-items-center ms-5">
                 <Link href="/" className="pointer text-dark pointerNav">
-                    <img src="../images/CC_png.png"/>
+                <Image 
+                     className="pointer"
+                     alt="Where2day"
+                     src={logo}
+                     width={50}
+                     height={50}
+                     style={{
+                        maxWidth: "100%",
+                        height: "auto",
+                     }}
+                     />
                     Carlos Carranza
                 </Link>
             </div>
             
-            <div className="float-end dropdown me-3">
-                <a className="btn d-flex navIcon align-items-center pointer" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div className="float-start">
+               
+                <a className="btn d-flex navIcon align-items-center pointer" href="#"  role="button" data-bs-toggle="dropdown">
                     <span className="navIcon2 ">Menu</span> <ion-icon name="menu-outline"></ion-icon>
                 </a>
 
-                <ul className="dropdown-menu">
+                <ul className="dropdown-menu ">
                     <li><a className="dropdown-item" href="/projects/where2day">Projects</a></li>
                     <li><Link className="dropdown-item" href="/about">About Me</Link></li>
                     <li><a className="dropdown-item" href="/contact">Contact</a></li>

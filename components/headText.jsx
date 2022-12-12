@@ -14,7 +14,7 @@ export default function HeadText () {
                 websites and developing SAAS.</p>
         <div className="d-flex">
             
-                <Link href="/contact" className="" ><b className="heavyFont pointer pointerh3">View Projects</b></Link>
+                <Link href="/projects/where2day" className="" ><b className="heavyFont pointer pointerh3">View Projects</b></Link>
                   <p className="ms-3 me-3"> or </p>
                  <Link href="/about" className=""><b className="heavyFont pointer pointerh3">Read About Me</b></Link>         
         </div>
