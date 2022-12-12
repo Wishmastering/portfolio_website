@@ -7,7 +7,7 @@ export default function ContactPage () {
     return <>
             
             {/* Imagen de Costa Rica aca */}
-            <div className="contactMap align-center col-12 justify-content-center">
+            <div className="contactMap align-center justify-content-center">
                 <img src="https://geology.com/world/costa-rica-map.gif"/>
             </div>
 
@@ -37,28 +37,28 @@ export default function ContactPage () {
                 {/* Aca empiezan los inputs */}
                     <form action="#" >
                     {/* Aca habran DOS DIVS para Your Name / Your eMail */}
-                    <div className="w-100 d-flex">
+                    <div className="w-100 row">
                         {/* Este es el de Name */}
-                        <div className="col-lg-6 mt-5 p-2">
+                        <div className="col-lg-6 col-sm-12 mt-5 p-2">
                             <label className="grot d-block form-control border-0" htmlFor="name">
                                 Your name
                             </label>
-                            <input className="p-3 w-100 border-0 form-control" placeholder="What's your name?" id="name"  type="text" />
+                            <input className="p-3 w-100 border-1 form-control" placeholder="What's your name?" id="name"  type="text" />
                         </div>
                         {/* Este es el de eMail */}
-                        <div  className="col-lg-6 mt-5 p-2">
+                        <div  className="col-lg-6 col-sm-12  mt-5 p-2">
                             <label className="grot d-block form-control border-0" htmlFor="email">
                                 Your email
                             </label>
-                            <input className="p-3 w-100 form-control border-0" placeholder="What's your email?" id="email"  type="text" />
+                            <input className="p-3 w-100 form-control border-1" placeholder="What's your email?" id="email"  type="text" />
                         </div>
                     </div>
 
                     {/* Este es el de los clickeables son DOS DIVS*/}
                     <div className="w-100 row">
                         {/* Este Div para "el motivo de contacto" */}
-                        <div className="col-lg-6 mt-5 p-2"> <label className="grot d-block form-control border-0" htmlFor="service">Services</label>
-                            <select className=" w-100 form-control p-3 text-secondary pointer" name="services" id="service">
+                        <div className="col-lg-6 col-sm-12  mt-5 p-2"> <label className="grot d-block form-control border-0" htmlFor="Service">Service</label>
+                            <select className=" w-100 form-control p-3 text-secondary pointer" name="Service" id="Service">
                                 <option value="-1">What are you interested in?</option>
                                 <option>Need help with a one time project</option>
                                 <option>Looking for a longterm partnership</option>
@@ -67,8 +67,8 @@ export default function ContactPage () {
                             </select>
                         </div>
                         {/* Este Div para "El Budget" */}
-                        <div className="col-lg-6 mt-5 p-2"> <label className="grot d-block form-control border-0" htmlFor="service">Services</label>
-                            <select className=" w-100 form-control p-3 text-secondary pointer" name="services" id="service">
+                        <div className="col-lg-6 col-sm-12  mt-5 p-2"> <label className="grot d-block form-control border-0" htmlFor="Budget">Budget</label>
+                            <select className=" w-100 form-control p-3 text-secondary pointer" name="Budget" id="Budget">
                                 <option value="-1">What is your budget?</option>
                                 <option>500$-1000$</option>
                                 <option>1000$-2500$</option>
