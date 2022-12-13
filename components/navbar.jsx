@@ -23,7 +23,10 @@ import logo from "../public/CC.png"
 
 export default function Navbar () {
     return <>
+    {/* Aca tendremos dos componentes  */}
         <div className="navigation d-flex fs-6 w-100 mt-3 justify-content-between">
+
+            {/* El primero es MI NOMBRE Y UN LOGO */}
             <div className="float-start navIcon d-flex align-items-center ms-5">
                 <Link href="/" className="pointer text-dark pointerNav">
                 <Image 
@@ -40,7 +43,8 @@ export default function Navbar () {
                     Carlos Carranza
                 </Link>
             </div>
-            
+
+            {/* EL SEGUNDO ES EL MENU Y EL ICONO MENU CLICKEABLE */}
             <div className="float-start">
                
                 <a className="btn d-flex navIcon align-items-center pointer" href="#"  role="button" data-bs-toggle="dropdown">

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
+import CallToAction from "../../components/callToAction";
 import Carousel from "../../components/carousel"
 import Experience from "../../components/experience";
 
@@ -85,10 +86,13 @@ export default function AboutPage () {
                 <h3>
                     I’ve been lucky enough to establish relationships with amazing
                     clients from all over the world, ranging from individual clients to mid-range businesses
-                    For more details, head over to my <Link className="pointerAbout" href="https://www.linkedin.com/in/carlos-i-carranza/">LinkedIn profile.</Link>
+                    For more details, head over to my <Link className="pointerAbout" href="https://www.linkedin.com/in/carlos-i-carranza/" target="_blank">LinkedIn profile.</Link>
                 </h3>
             </div>
             <Experience />
+            <hr className="w-85 marginSection justify-content-center"/>
+            <CallToAction/>
+            <hr className="w-85 marginSection justify-content-center"/>
             <Footer/>
         </div>
     </>

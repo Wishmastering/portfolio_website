@@ -23,10 +23,10 @@ export default function Footer(){
                     <p>I usually work on several projects but I’ll be happy to discuss new opportunities. 
                         Let’s get in touch!</p>
                 </div>
-                <div className="col-xl-1 col-md-2 col-sm-12 ms-3 me-3">
+                <div className="col-xl-1 col-md-2 col-sm-12 ms-3 me-3 mb-1">
                     <h1 className="heavyFont fontWeight"> Follow Me On —</h1>
-                    <Link href="https://www.linkedin.com/in/carlos-i-carranza/" target="_blank" className="pointer pointerh3"><p className="pointer">Linkedin</p></Link>
-                    <Link href="https://github.com/Wishmastering" target="_blank"><p className="pointer pointerh3">Github</p></Link>
+                    <Link href="https://www.linkedin.com/in/carlos-i-carranza/" target="_blank" className="pointer pointerFoot"><p className="pointer pointerFoot">Linkedin</p></Link>
+                    <Link href="https://github.com/Wishmastering" target="_blank"><p className="pointer pointerFoot">Github</p></Link>
                     
                 </div>
         </div>

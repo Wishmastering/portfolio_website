@@ -1,18 +1,29 @@
 "use client"
-
+import Image from "next/image";
 import Footer from "../../components/footer"
 import { useEffect } from "react"
+import png from "../../public/location.png"
 
 export default function ContactPage () {
     return <>
             
             {/* Imagen de Costa Rica aca */}
-            <div className="contactMap align-center justify-content-center">
-                <img src="https://geology.com/world/costa-rica-map.gif"/>
+            <div className="w-100 d-flex justify-content-center">
+                    <Image 
+                     className="contactMap mt-5"
+                     src={png}
+                     alt="Location"
+                     width={500}
+                     height={100}
+                     style={{
+                         maxWidth: "60%",
+                         height: "600px",
+                        }}
+                    />
             </div>
 
             {/* Aca iran los componentes de la Izq y Der */}
-            <div className="row container marginSection ms-4">
+            <div className="row container mt-5 ms-4">
                 {/* Texto de la izquierda Aca */}
                 <div className="col-lg-6"> 
                     <h5>Contact</h5>

@@ -2,7 +2,6 @@
 
 import { useEffect } from "react"
 
-import BackgroundDeveloper from "../components/backgroundText"
 // Linea 4 traera el hook useEffect
 
 import HeadText from "../components/headText"
@@ -17,12 +16,13 @@ import Footer from "../components/footer"
 
 export default function HomePage () {
     return <>
-        <div className="row">
-            <BackgroundDeveloper/>
+        <div className="row"> 
             <HeadText/>
             <Projects/>
             <CallToAction/>
-            <hr className="w-85 marginSection justify-content-center"></hr>
+            <div className="row justify-content-center">
+                <hr className="w-75 marginSection "/>
+            </div>
             <Footer/>
         </div>
     </>
