@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
-import CallToAction from "../../components/callToAction";
-import Carousel from "../../components/carousel"
-import Experience from "../../components/experience";
+import CallToAction from "../components/callToAction";
+import Carousel from "../components/carousel"
+import Experience from "../components/experience";
 
 // Linea 4 traera el hook useEffect
 
-import Footer from "../../components/footer"
+import Footer from "../components/footer"
 
 // Linea 8 importamos el componente headText
 
@@ -41,7 +41,7 @@ export default function AboutPage () {
     return <>
         <div className=" mt-5 container w-75 text-center">
             <h5>A Few Words About Me</h5>
-            <h1>
+            <h1 className="">
                 I’m Carlos Carranza, a multidisciplinary developer
                 who focuses on telling my clients’ stories visually,
                 through enjoyable and meaningful experiences. 

@@ -1,6 +1,6 @@
 import Link from "next/link" 
 import Image from "next/image";
-import png from "../public/LANDING.png"
+import png from "../../public/LANDING.png"
 
 export default function HeadText () {
     return <>
@@ -27,7 +27,7 @@ export default function HeadText () {
                     <Link href="/about" className=""><b className="heavyFont pointer pointerh3">Read About Me</b></Link>         
             </div>
         </div>
-        {/* Aca viene la imagen */}
+        {/* Aca viene la imagen de Carlos Carranza */}
         <div id="portrait" className="col-lg-5 col-sm-5 d-none d-sm-block ">
             <Image  id="portrait"
                     alt="Portrait"

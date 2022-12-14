@@ -1,6 +1,6 @@
 import Link from "next/link" 
 import Image from "next/image";
-import logo from "../public/CC.png"
+import logo from "../../public/CC.png"
 // activa el next JS para poder navegar entre links
 
 // import HomePage from "../app/page"
@@ -29,7 +29,7 @@ export default function Navbar () {
             {/* El primero es MI NOMBRE Y UN LOGO */}
             <div className="float-start navIcon d-flex align-items-center ms-5">
                 <Link href="/" className="pointer text-dark pointerNav">
-                <Image 
+                    <Image 
                      className="pointer"
                      alt="Where2day"
                      src={logo}
@@ -39,7 +39,7 @@ export default function Navbar () {
                         maxWidth: "100%",
                         height: "auto",
                      }}
-                     />
+                    />
                     Carlos Carranza
                 </Link>
             </div>

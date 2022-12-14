@@ -1,18 +1,7 @@
-"use client"
-
-import { useEffect } from "react"
-
-// Linea 4 traera el hook useEffect
-
-import HeadText from "../components/headText"
-import Projects from "../components/projects"
-import CallToAction from "../components/callToAction"
-import Footer from "../components/footer"
-
-// Linea 8 importamos el componente headText
-
-
-
+import HeadText from "./components/headText"
+import Projects from "./components/projects"
+import CallToAction from "./components/callToAction"
+import Footer from "./components/footer"
 
 export default function HomePage () {
     return <>

@@ -2,7 +2,7 @@ import Link from "next/link"
 // Linea 1: esto traera la funcionalidad en nextJS de poder navegar de una routa a otra
 import "../styles/globals.css"
 // Linea 3: esto importa los styles de CSS
-import Navbar from "../components/navbar"
+import Navbar from "./components/navbar"
 // Linea 5: esto importa el componente Navbar 
 
 

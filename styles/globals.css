@@ -24,11 +24,23 @@ body {
 
 h1{
   font-size: 3.125rem;
-  line-height: 2.5rem;
+  line-height: 3.0rem;
   padding-top: 2px;
   padding-bottom: 3px;
   font-family: 'Helvetica Now Display';
   color: black;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 601) {
+  h1 {
+    font-size: 1px;
+  }
 }
 
 h2{
@@ -203,7 +215,7 @@ p{
 .pointerNav:hover{
   cursor: pointer;
   color: #878a8f !important;
-  transition: all .2s cubic-bezier(.3,0,.5,1)
+  transition: all .5s cubic-bezier(.3,0,.5,1)
 }
 
 .marginSection{

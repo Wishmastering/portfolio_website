@@ -1,15 +1,15 @@
 "use client"
 import Image from "next/image";
-import Footer from "../../components/footer"
+import Footer from "../components/footer"
 import { useEffect } from "react"
-import png from "../../public/location.png"
+// import png from "../../public/location.png"
 
 export default function ContactPage () {
     return <>
             
             {/* Imagen de Costa Rica aca */}
             <div className="w-100 d-flex justify-content-center">
-                    <Image 
+                    {/* <Image 
                      className="contactMap mt-5"
                      src={png}
                      alt="Location"
@@ -19,7 +19,7 @@ export default function ContactPage () {
                          maxWidth: "60%",
                          height: "600px",
                         }}
-                    />
+                    /> */}
             </div>
 
             {/* Aca iran los componentes de la Izq y Der */}
@@ -46,7 +46,7 @@ export default function ContactPage () {
                     </h3>
 
                 {/* Aca empiezan los inputs */}
-                    <form action="#" >
+                    <form action="https://formspree.io/f/moqbggqv" method="POST">
                     {/* Aca habran DOS DIVS para Your Name / Your eMail */}
                     <div className="w-100 row">
                         {/* Este es el de Name */}
@@ -54,14 +54,14 @@ export default function ContactPage () {
                             <label className="grot d-block form-control border-0" htmlFor="name">
                                 Your name
                             </label>
-                            <input className="p-3 w-100 border-1 form-control" placeholder="What's your name?" id="name"  type="text" />
+                            <input className="p-3 w-100 border-1 form-control" placeholder="What's your name?" id="name" name="Name"  type="text" />
                         </div>
                         {/* Este es el de eMail */}
                         <div  className="col-lg-6 col-sm-12  mt-5 p-2">
                             <label className="grot d-block form-control border-0" htmlFor="email">
                                 Your email
                             </label>
-                            <input className="p-3 w-100 form-control border-1" placeholder="What's your email?" id="email"  type="text" />
+                            <input className="p-3 w-100 form-control border-1" placeholder="What's your email?" name="Email" id="email"  type="text" />
                         </div>
                     </div>
 
@@ -92,7 +92,9 @@ export default function ContactPage () {
                     <textarea className="form-control border-1" placeholder="What's your message?" name="Comments" id="comments" cols="13" rows="8"></textarea>
                     </div>
                     <div className="col-lg-12 mt-5 p-2">
-                        <h1 className="fs-3 pointer d-inline-block">✉️Send message</h1>
+                        <button type="submit" className="btn" target="_blank">
+                            <h1 className="fs-3 pointer d-inline-block">✉️Send message</h1>
+                        </button>
                     </div>
 
                     

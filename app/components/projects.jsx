@@ -1,8 +1,8 @@
 "use client"
 import Link from "next/link";
 import Image from "next/image";
-import where2dayHOME from "../public/Where2dayHOME1.PNG";
-import where2dayPOST from "../public/Where2dayPost.PNG";
+import where2dayHOME from "../../public/Where2dayHOME1.PNG";
+import where2dayPOST from "../../public/Where2dayPost.PNG";
 import {useState} from "react";
 
 
