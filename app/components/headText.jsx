@@ -16,9 +16,8 @@ export default function HeadText () {
             </div>
             <h1 className="mt-4 heavyFont">Developer and web designer</h1>
             <p className="text-secondary mt-4 fontWeight"> Over the past 5 years I have been working
-                    with big eCommerce companies around the world and have
-                    been offering services around them, working
-                    solo and leading small eCommerce teams, maintaining eCommerce 
+                    with big eCommerce companies around the world. Offering services around them, working
+                    solo, leading small eCommerce teams, maintaining eCommerce 
                     websites and developing SAAS.</p>
             <div className="d-flex">
                 
