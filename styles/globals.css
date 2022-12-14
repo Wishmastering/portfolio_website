@@ -18,8 +18,18 @@ body {
   /* overflow-x: hidden; */
 }
 
-.body2{
+.body1{
   overflow-x: hidden;
+  /* margin-left: 60px; */
+  /* margin-right: 60px; */
+  /* margin-block-end: 60px; */
+}
+
+.body2{
+  /* overflow-x: hidden; */
+  margin-left: 40px;
+  margin-right: 50px;
+  /* margin-block-end: 40px; */
 }
 
 h1{
@@ -222,6 +232,14 @@ p{
   margin-top: 200px;
 }
 
+.marginSectionScroll{
+  margin-top: 170px;
+}
+
+.mt-scroll{
+  margin-top: 60px;
+}
+
 .blackFont{
   color:black !important;
 }
@@ -281,8 +299,12 @@ a {
 
 .overflowx{
   overflow-x: hidden;
-  z-index: 5;
+  /* z-index: 5; */
 }
+
+/* .iconFilter{
+  filter: grayscale(100%);
+} */
 
 /*  ALL THE OPTIONS IN CSS TO NOT SHOW BORDER BOTTOM */
 

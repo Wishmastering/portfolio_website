@@ -1,12 +1,9 @@
 "use client"
-import Link from "next/link";
+// import Link from "next/link";
 import Image from "next/image";
 import where2dayHOME from "../../public/Where2dayHOME1.PNG";
 import where2dayPOST from "../../public/Where2dayPost.PNG";
 import {useState} from "react";
-
-
-
 
 
 export default function Projects(){
@@ -14,33 +11,36 @@ export default function Projects(){
     const [blur, setBlur] = useState(false);
     const [blurStarWars, setBlurStarWars] = useState(false);
     
-    function test(){
-         
-    }
-
-    setTimeout(test(), 5000)
+    let handleClick = () => {
+        // Find the element you want to scroll to
+        const element = document.querySelector('#scroller');
+    
+        // Scroll to the element
+        element.scrollIntoView({ behavior: 'smooth' });
+      };
 
     return<>
-        <section className="ms-4 container w-100 marginSection justify-content-center">
+        <section id="scroller" className="w-100 marginSectionScroll">
+        <div className="mt-scroll">
             <div className="row">
                 <div className="col-5">
-                    <h5 className="ms-4"> Selected Projects</h5>
-                    <h1 className="ms-4 mt-3 heavyFont mb-5"> Portfolio</h1>
+                    <h5 className=""> Selected Projects</h5>
+                    <h1 className=" mt-3 heavyFont mb-5"> Portfolio</h1>
                 </div>
             </div>
             
             {/* Aca empiezan las cards de portfolio con animacion */}
 
-            <div className="row mt-5 w-100 ">
+            <div className="row mt-5 d-flex justify-content-center">
                 
                 {/* Metemos todo dentro del <a> tag para que TODO redirija */}
-                <div className="position-relative col-lg-6 projectsHeight overflowx">
+                <div  className="position-relative col-lg-6 projectsHeight overflowx">
                     <a href="/projects/where2day">
                         <div 
                          className="visible position-absolute ms-5 mt-3 w-75">
                             <h1
                              onMouseEnter={()=> setBlur(true)}    
-                              > Where2day
+                             > Where2day
                             </h1>
                             <div 
                              onMouseEnter={()=> setBlur(true)}
@@ -57,9 +57,10 @@ export default function Projects(){
                      {/* // "El Agregado de la class que le hace la transicion de CSS" */}
                      {/* // Luego el mouseLEAVE hara blur FALSE y regresa al estado inicial */}
                      <Image 
+                     
                      onMouseEnter={() => setBlur(true)}
                      onMouseLeave={() => setBlur(false)}
-                     className={blur ? "rounded shadow blurry pointerWeak position-absolute" : "rounded shadow desblurry position-absolute"}
+                     className={blur ? "rounded shadow blurry pointerWeak position-absolute overflowx" : "rounded shadow desblurry position-absolute overflowx"}
                      alt="Where2day"
                      src={where2dayHOME}
                      width={500}
@@ -73,7 +74,7 @@ export default function Projects(){
                 </div>    
 
                     {/* Inicia nuevo card */}
-                <div className="position-relative col-6 projectsHeight">
+                <div className="position-relative col-6 projectsHeight overflowx">
                     <a href="/projects/star_wars">
                         <div  className="position-absolute mt-3 ms-5 col-6 visible">
                             <h1
@@ -92,7 +93,7 @@ export default function Projects(){
                         <Image 
                          onMouseEnter={() => setBlurStarWars(true)}
                          onMouseLeave={() => setBlurStarWars(false)}
-                         className={blurStarWars ? "rounded shadow blurry pointerWeak position-absolute" : "rounded shadow desblurry position-absolute"}
+                         className={blurStarWars ? "rounded shadow blurry pointerWeak position-absolute overflowx" : "rounded shadow desblurry position-absolute overflowx"}
                          alt="Where2day"
                          src={where2dayPOST}
                          width={500}
@@ -105,7 +106,8 @@ export default function Projects(){
                     </a>
                 </div>    
             </div>
-            
+            <a href="#scroller" onClick={()=>handleClick}>Click me to scroll</a>
+        </div>
         </section>
     </>
 }

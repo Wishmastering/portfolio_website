@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer(){
     return<>
-        <div className="d-flex w-100 marginSection row justify-content-center">
+        <div className="d-flex w-100 mt-4 row">
                 <div className="col-xl-4 col-lg-12 col-md-12 col-sm-12 ms-5 me-5 text-center justify-content-center">       
                         <h1 className="heavyFont fontWeight"> Contact Information —</h1>
                         <p className="">Feel free to reach out to me any time. 

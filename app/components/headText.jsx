@@ -10,7 +10,7 @@ export default function HeadText () {
     {/* Este es el padre de DOS DIVs  */}
     <div className="row w-100">
         {/* Aca vendra el texto */}
-        <div id="sobreFondo" className="col-10 col-sm-6 ms-4">
+        <div id="sobreFondo" className="col-10 col-sm-6">
             <div className="d-flex">
                 <h5 className="">Carlos Carranza</h5>
             </div>

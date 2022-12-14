@@ -5,12 +5,12 @@ import Footer from "./components/footer"
 
 export default function HomePage () {
     return <>
-        <div className="row"> 
+        <div className="row ms-5"> 
             <HeadText/>
             <Projects/>
             <CallToAction/>
             <div className="row justify-content-center">
-                <hr className="w-75 marginSection "/>
+                <hr className="w-100 marginSection"/>
             </div>
             <Footer/>
         </div>

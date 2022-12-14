@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <head />
-      <body className="w-100 h-100 justify-content-center">
+      <body className="w-100 h-100 justify-content-center body1">
       
         <Navbar/>
       <div className="body2">{children}</div>

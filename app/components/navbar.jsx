@@ -30,8 +30,8 @@ export default function Navbar () {
             <div className="float-start navIcon d-flex align-items-center ms-5">
                 <Link href="/" className="pointer text-dark pointerNav">
                     <Image 
-                     className="pointer"
-                     alt="Where2day"
+                     className="pointer iconFilter"
+                     alt="CC Logo"
                      src={logo}
                      width={50}
                      height={50}
