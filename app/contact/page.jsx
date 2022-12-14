@@ -2,14 +2,14 @@
 import Image from "next/image";
 import Footer from "../components/footer"
 import { useEffect } from "react"
-// import png from "../../public/location.png"
+import png from "../../public/location.png"
 
 export default function ContactPage () {
     return <>
             
             {/* Imagen de Costa Rica aca */}
             <div className="w-100 d-flex justify-content-center">
-                    {/* <Image 
+                    <Image 
                      className="contactMap mt-5"
                      src={png}
                      alt="Location"
@@ -19,7 +19,7 @@ export default function ContactPage () {
                          maxWidth: "60%",
                          height: "600px",
                         }}
-                    /> */}
+                    />
             </div>
 
             {/* Aca iran los componentes de la Izq y Der */}
@@ -50,14 +50,14 @@ export default function ContactPage () {
                     {/* Aca habran DOS DIVS para Your Name / Your eMail */}
                     <div className="w-100 row">
                         {/* Este es el de Name */}
-                        <div className="col-lg-6 col-sm-12 mt-5 p-2">
+                        <div className="col-lg-6 col-sm-12 p-2">
                             <label className="grot d-block form-control border-0" htmlFor="name">
                                 Your name
                             </label>
                             <input className="p-3 w-100 border-1 form-control" placeholder="What's your name?" id="name" name="Name"  type="text" />
                         </div>
                         {/* Este es el de eMail */}
-                        <div  className="col-lg-6 col-sm-12  mt-5 p-2">
+                        <div  className="col-lg-6 col-sm-12 p-2">
                             <label className="grot d-block form-control border-0" htmlFor="email">
                                 Your email
                             </label>
@@ -68,7 +68,7 @@ export default function ContactPage () {
                     {/* Este es el de los clickeables son DOS DIVS*/}
                     <div className="w-100 row">
                         {/* Este Div para "el motivo de contacto" */}
-                        <div className="col-lg-6 col-sm-12  mt-5 p-2"> <label className="grot d-block form-control border-0" htmlFor="Service">Service</label>
+                        <div className="col-lg-6 col-sm-12 p-2"> <label className="grot d-block form-control border-0" htmlFor="Service">Service</label>
                             <select className=" w-100 form-control p-3 text-secondary pointer" name="Service" id="Service">
                                 <option value="-1">What are you interested in?</option>
                                 <option>Need help with a one time project</option>
@@ -78,7 +78,7 @@ export default function ContactPage () {
                             </select>
                         </div>
                         {/* Este Div para "El Budget" */}
-                        <div className="col-lg-6 col-sm-12  mt-5 p-2"> <label className="grot d-block form-control border-0" htmlFor="Budget">Budget</label>
+                        <div className="col-lg-6 col-sm-12 p-2"> <label className="grot d-block form-control border-0" htmlFor="Budget">Budget</label>
                             <select className=" w-100 form-control p-3 text-secondary pointer" name="Budget" id="Budget">
                                 <option value="-1">What is your budget?</option>
                                 <option>500$-1000$</option>
@@ -88,10 +88,10 @@ export default function ContactPage () {
                             </select>
                         </div>
 
-                    <div className="col-lg-12 mt-5 p-2">
+                    <div className="col-lg-12 p-2">
                     <textarea className="form-control border-1" placeholder="What's your message?" name="Comments" id="comments" cols="13" rows="8"></textarea>
                     </div>
-                    <div className="col-lg-12 mt-5 p-2">
+                    <div className="col-lg-12 p-2">
                         <button type="submit" className="btn" target="_blank">
                             <h1 className="fs-3 pointer d-inline-block">✉️Send message</h1>
                         </button>
@@ -101,6 +101,7 @@ export default function ContactPage () {
                     </div>
                     </form>
                 </div>
+                <hr className="mt-5" />
                 <Footer/>
                 
             </div>    
