@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Footer from "../components/footer"
 import { useEffect } from "react"
-import png from "../../public/location1.png"
+import png from "../../public/location2.png"
 
 export default function ContactPage () {
     return <>
