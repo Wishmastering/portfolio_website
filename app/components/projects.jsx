@@ -2,7 +2,7 @@
 // import Link from "next/link";
 import Image from "next/image";
 import where2day from "../../public/CC.png";
-import post from "../../public/Where2day1.png";
+import post from "../../public/nyan.webp";
 import {useState} from "react";
 
 
