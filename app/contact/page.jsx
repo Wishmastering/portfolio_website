@@ -2,14 +2,14 @@
 import Image from "next/image";
 import Footer from "../components/footer"
 import { useEffect } from "react"
-// import png from "../../public/location.png"
+import png from "../../public/location1.png"
 
 export default function ContactPage () {
     return <>
             
             {/* Imagen de Costa Rica aca */}
             <div className="w-100 d-flex justify-content-center">
-                    {/* <Image 
+                    <Image 
                      className="contactMap mt-5"
                      src={png}
                      alt="Location"
@@ -19,7 +19,7 @@ export default function ContactPage () {
                          maxWidth: "60%",
                          height: "600px",
                         }}
-                    /> */}
+                    />
             </div>
 
             {/* Aca iran los componentes de la Izq y Der */}
