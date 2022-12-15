@@ -1,8 +1,18 @@
+"use client"
 import Link from "next/link" 
 import Image from "next/image";
 import png from "../../public/LANDING.png"
 
 export default function HeadText () {
+    
+    let handleClick = () => {
+        // Find the element you want to scroll to
+        const element = document.querySelector('#scroller');
+    
+        // Scroll to the element
+        element.scrollIntoView({ behavior: 'smooth' });
+      };
+
     return <>
     <div id="fondo" className="col-5 col-lg-12 text-center d-none d-sm-block  ">
             Developer
@@ -20,8 +30,8 @@ export default function HeadText () {
                     solo, leading small eCommerce teams, maintaining eCommerce 
                     websites and developing SAAS.</p>
             <div className="d-flex">
-                
-                    <Link href="/projects/where2day" className="" ><b className="heavyFont pointer pointerh3">View Projects</b></Link>
+
+                    <a href="#scroller" onClick={()=>handleClick}> <b className="heavyFont pointer pointerh3">View Projects </b></a>
                     <p className="ms-3 me-3"> or </p>
                     <Link href="/about" className=""><b className="heavyFont pointer pointerh3">Read About Me</b></Link>         
             </div>

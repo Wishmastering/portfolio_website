@@ -11,13 +11,7 @@ export default function Projects(){
     const [blur, setBlur] = useState(false);
     const [blurStarWars, setBlurStarWars] = useState(false);
     
-    let handleClick = () => {
-        // Find the element you want to scroll to
-        const element = document.querySelector('#scroller');
     
-        // Scroll to the element
-        element.scrollIntoView({ behavior: 'smooth' });
-      };
 
     return<>
         <section id="scroller" className="w-100 marginSectionScroll">
@@ -106,7 +100,6 @@ export default function Projects(){
                     </a>
                 </div>    
             </div>
-            <a href="#scroller" onClick={()=>handleClick}>Click me to scroll</a>
         </div>
         </section>
     </>
