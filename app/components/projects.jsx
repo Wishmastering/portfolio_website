@@ -1,7 +1,7 @@
 "use client"
 // import Link from "next/link";
 import Image from "next/image";
-import where2day from "../../public/CC.png";
+import where2day from "../../public/ovejanegra.png";
 import post from "../../public/nyan.webp";
 import {useState} from "react";
 
