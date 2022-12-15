@@ -50,7 +50,7 @@ export default function Projects(){
                      {/* // Aca se hace on mouseEnter para setear blur TRUE y hacer */}
                      {/* // "El Agregado de la class que le hace la transicion de CSS" */}
                      {/* // Luego el mouseLEAVE hara blur FALSE y regresa al estado inicial */}
-                     <Image 
+                     {/* <Image 
                      
                      onMouseEnter={() => setBlur(true)}
                      onMouseLeave={() => setBlur(false)}
@@ -63,7 +63,7 @@ export default function Projects(){
                         maxWidth: "100%",
                         height: "auto",
                      }}
-                     />
+                     /> */}
                     </a>
                 </div>    
 
@@ -84,7 +84,7 @@ export default function Projects(){
                                 <h3>View Project ➡</h3>
                             </div>
                         </div>
-                        <Image 
+                        {/* <Image 
                          onMouseEnter={() => setBlurStarWars(true)}
                          onMouseLeave={() => setBlurStarWars(false)}
                          className={blurStarWars ? "rounded shadow blurry pointerWeak position-absolute overflowx" : "rounded shadow desblurry position-absolute overflowx"}
@@ -96,7 +96,7 @@ export default function Projects(){
                             maxWidth: "100%",
                             height: "auto",
                          }}
-                        />
+                        /> */}
                     </a>
                 </div>    
             </div>
