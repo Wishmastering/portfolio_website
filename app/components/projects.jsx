@@ -1,8 +1,8 @@
 "use client"
 // import Link from "next/link";
 import Image from "next/image";
-import where2dayHOME from "../../public/where2dayhome1.png";
-import where2dayPOST from "../../public/where2daypost.png";
+import where2day from "../../public/where2dayhome1.png";
+import post from "../../public/where2daypost.png";
 import {useState} from "react";
 
 
@@ -56,7 +56,7 @@ export default function Projects(){
                      onMouseLeave={() => setBlur(false)}
                      className={blur ? "rounded shadow blurry pointerWeak position-absolute overflowx" : "rounded shadow desblurry position-absolute overflowx"}
                      alt="Where2day"
-                     src={where2dayHOME}
+                     src={where2day}
                      width={500}
                      height={1000}
                      style={{
@@ -89,7 +89,7 @@ export default function Projects(){
                          onMouseLeave={() => setBlurStarWars(false)}
                          className={blurStarWars ? "rounded shadow blurry pointerWeak position-absolute overflowx" : "rounded shadow desblurry position-absolute overflowx"}
                          alt="Where2day"
-                         src={where2dayPOST}
+                         src={post}
                          width={500}
                          height={1000}
                          style={{
