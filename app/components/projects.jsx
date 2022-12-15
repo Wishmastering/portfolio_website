@@ -2,7 +2,7 @@
 // import Link from "next/link";
 import Image from "next/image";
 import where2day from "../../public/ovejanegra.png";
-import post from "../../public/nyan.webp";
+import starwars from "../../public/StarWars.png";
 import {useState} from "react";
 
 
@@ -89,7 +89,7 @@ export default function Projects(){
                          onMouseLeave={() => setBlurStarWars(false)}
                          className={blurStarWars ? "rounded shadow blurry pointerWeak position-absolute overflowx" : "rounded shadow desblurry position-absolute overflowx"}
                          alt="Where2day"
-                         src={post}
+                         src={starwars}
                          width={500}
                          height={1000}
                          style={{
