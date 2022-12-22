@@ -29,7 +29,7 @@ export default function Where2day () {
                 <h4>2022</h4>
            </div>
            <div className="infodiv col-lg-6 col-sm-12">
-             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur corporis accusamus, quod nesciunt dolores, doloremque qui consectetur ipsam impedit consequatur quis cumque earum quos reiciendis architecto dicta velit quam voluptatem autem aliquam sed eos illum similique. At deserunt blanditiis quod consequuntur autem beatae! Amet consectetur ullam quaerat perspiciatis delectus, dignissimos, provident eaque impedit assumenda error quasi deleniti facilis doloribus. Maiores ex atque modi, numquam placeat consectetur! Facilis nam ipsa incidunt, aliquam obcaecati ut repudiandae ea quas architecto officiis perferendis modi quaerat, porro ratione suscipit? Maiores quisquam atque adipisci? Debitis quia voluptatum aut quaerat eius fugiat aliquam accusantium voluptate recusandae.</h3>
+             <h3>Im working on the finishing touches for my projects tabs 🛑☢🚫. Currently Under Cosntruction, Soon It Will Be All Finished. 👨‍💻🏃‍♂️👨‍🔧</h3>
            </div>
 
            <Image
