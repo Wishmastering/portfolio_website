@@ -1,8 +1,8 @@
 import Image from "next/image";
 import png0 from "../../../public/ovejanegra.png";
-import png1 from "../../../public/Where2day1.png";
-import png2 from "../../../public/Where2day2.png";
-import png3 from "../../../public/Where2day3.png";
+import png1 from "../../../public/where2day1.png";
+import png2 from "../../../public/where2day2.png";
+import png3 from "../../../public/where2day3.png";
 
 
 export default function Where2day () {
