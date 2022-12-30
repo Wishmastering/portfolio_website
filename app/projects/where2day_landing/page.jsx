@@ -8,6 +8,8 @@ import gif from "../../../public/nyan.webp";
 // import feed from "../../../public/where2dayHOME1.png";
 
 export default function Where2day () {
+    
+    console.log("Hola")
 
     return <>
         <div className=" row w-100 ms-3">
