@@ -11,7 +11,7 @@ export default function Where2day () {
            <div className="infodiv col-lg-6 col-sm-12">
            <h5 className="mt-4">Project</h5>
                  <h2>Landing Page & App Funcionalities - Where2day</h2>
-                 <h5 className="mt-4">My Role</h5>
+                 <h5 className="mt-4 a">My Role</h5>
                  <h4>Scrum Master
                      <br/>
                     UX / UI 
