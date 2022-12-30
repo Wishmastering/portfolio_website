@@ -93,8 +93,8 @@ export default function Where2day () {
                      className="rounded mt-5 mb-5 justify-content-center d-flex"
                      alt="imagen"
                      src={png3}
-                     width={1000}
-                     height={1000}
+                     width={999}
+                     height={999}
                      style={{
                         maxWidth: "75%",
                         height: "auto",

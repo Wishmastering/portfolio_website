@@ -3,7 +3,7 @@
 import Image from "next/image";
 import where2day from "../../public/ovejanegra.png";
 import starwars from "../../public/starwarscard.png";
-import prometeo from "../../public/PrometeoCARD.png";
+import prometeo from "../../public/PrometeoCard.png";
 import landing from "../../public/Where2dayLANDING.png"
 import {useState} from "react";
 
