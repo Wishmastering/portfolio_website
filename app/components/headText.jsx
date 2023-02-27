@@ -24,7 +24,7 @@ export default function HeadText () {
             <div className="d-flex">
                 <h5 className="">Carlos Carranza</h5>
             </div>
-            <h1 className="mt-4 heavyFont">Developer and web designer</h1>
+            <h1 className="mt-4 heavyFont">Frontend Developer and web designer</h1>
             <p className="text-secondary mt-4 fontWeight"> Over the past 5 years I have been working
                     with big eCommerce companies around the world. Offering services around them, working
                     solo, leading small eCommerce teams, maintaining eCommerce 
