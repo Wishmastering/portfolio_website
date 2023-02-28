@@ -322,3 +322,11 @@ a {
   /* -moz-user-select: none;  */
   /* -ms-user-select: none; */
   /* user-select: none; */
+
+  /* SVG Hamburguer */
+
+  .hamburger:hover .line-one,
+  .hamburger:hover .line-two,
+  .hamburger:hover .line-three{
+    transform: scale(1.5);
+  }

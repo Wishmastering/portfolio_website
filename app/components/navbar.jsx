@@ -1,27 +1,21 @@
-import Link from "next/link" 
-import Image from "next/image";
-import logo from "../../public/CC.png"
-// activa el next JS para poder navegar entre links
-
-// import HomePage from "../app/page"
-
-// const links = [{label: "Home", route: "/"}, {label: "About", route: "/about",}]
-
-        {/* {links.map(({label, route}) => 
-            <li className="btn btn-outline boton" key={label}>
-                <Link className="text-light" href={route}>
-                    {label}
-                </Link>
-            </li>
-        )} */}
-
-// Linea 6 a 15
-// Esto permite dar un DESESTRUCTURING DE LOS OBJETOS
-// DA EL KEY de "label" para distinguirlos de forma unica
-// luego el href usara la ruta que tiene almacenada en el objeto
+"use client"
+import { useEffect, useRef } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import logo from '../../public/CC.png';
+import gsap from 'gsap';
 
 
-export default function Navbar () {
+
+export default function Navbar() {
+  
+
+
+//   useEffect(() => {
+//     const hamburger= document.querySelector(".hamburger")  
+//       gsap.from(hamburger, { duration: 4, opacity: 0.5, x: -400 });
+//   }, []);
+
     return <>
     {/* Aca tendremos dos componentes  */}
         <div className="navigation d-flex fs-6 w-100 mt-3 justify-content-between">
@@ -49,6 +43,11 @@ export default function Navbar () {
                
                 <a className="btn d-flex navIcon align-items-center pointer" href="#"  role="button" data-bs-toggle="dropdown">
                     <span className="navIcon2 ">Menu</span> <ion-icon name="menu-outline"></ion-icon>
+                    {/* <svg className="hamburger " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style={{backgroundColor:"green"}}>
+                        <line className="line-one" x1="25" y1="38" x2="75" y2="38" fill='none' stroke="#000" strokeMiterlimit="10" strokeWidth="4"/>
+                        <line className="line-two" x1="25" y1="50" x2 = "75" y2="50" fill='none' stroke="#000" strokeMiterlimit="10" strokeWidth="4"/>
+                        <line className="line-three" x1="25" y1="62" x2 = "75" y2="62" fill='none' stroke="#000" strokeMiterlimit="10" strokeWidth="4"/>
+                    </svg> */}
                 </a>
 
                 <ul className="dropdown-menu ">
